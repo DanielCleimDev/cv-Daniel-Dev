@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 @import url(reset.css);
 
 :root{
@@ -7,40 +8,49 @@
   --fundo-3: #154D71;
 
   --fonte-principal: "Poppins";
+  --fonte-nome: "Parisienne", cursive;
 }
 
 html, body{
   width: 100%;
 }
 
-/*Grid*/
 body{
   font-family: var(--fonte-principal);
   color: var(--fundo);
   font-weight: 400;
+  font-style: normal;
   font-size: 16px;
-  line-height: 1.3em;
+  line-height: 1.4em;
 
   background-color: var(--fundo);
   box-sizing: border-box;
 
-  display: grid;
+  /*display: grid;
   grid-template-areas: 
   "header header header header header"
-  "aside main main main main";
+  "aside main main main main";*/
 }
 
 header{
-  grid-area: header;
+  /*grid-area: header;*/
   padding: 1rem;
 }
 aside{
-  grid-area: aside;
+  /*grid-area: aside;*/
   padding: 1rem;
 }
 main{
-  grid-area: main;
+  /*grid-area: main;*/
   padding: 1rem;
+}
+
+.container{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: stretch;
+  margin: 0 1rem;
+  gap: 1rem;
 }
 
 .card{
@@ -51,6 +61,7 @@ main{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   padding: 1rem;
+  margin-bottom: 0.5rem;
 }
 .card2{
  background-color: var(--fundo-2);
@@ -70,36 +81,45 @@ main{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 2rem;
 }
+.principal-conteudo{
+  margin-left: 2rem;
+}
+
+.principal-nome{
+ font-family: var(--fonte-nome);
+ font-size: 3rem;
+ margin:1rem 0 2rem 0;
+ text-shadow : 2px 3px 2px var(--fundo-3) ;
+}
+.principal-situacao{
+  font-size: 1.5em;
+}
+.principal-texto1{
+  font-size: 1.3em;
+}
+
 .principal-img{
   max-width: 15vw;
   border-radius: 25px;
   margin-right: 2rem;
 }
 
-.principal-nome{
-
-}
-.principal-situacao{
-
-}
-.principal-texto1{
-
-}
-.principal-texto2{
-
-}
-
 /*Experiência*/
 
-.exp-cargo{
-  
+.exp-cargo, .form-curso{
+  font-size: 1.3rem;
+  font-weight: 480;
+  margin: 0.5rem 0;
 }
 .exp-titulo1{
-
+ margin: 1rem 0;
 }
-.exp-titulo2{
-
+.exp-titulo2, .form-titulo2{
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin: 0.5rem 0;
 }
 .exp-tempo{
 
@@ -117,7 +137,7 @@ main{
 /*Formação Acadêmica*/
 
 .form-titulo1{
-
+ margin: 1rem 0;
 }
 .form-titulo2{
 
